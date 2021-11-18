@@ -1,0 +1,12 @@
+[Plugin]
+Name=Godot Tools
+Description=A complete suite for developing Godot games with GNOME Builder
+Author=Atirut Wattanamongkol
+Loader=python3
+Module=godot-tools
+
+X-Project-File-Filter-Pattern=project.godot
+X-Project-File-Filter-Name=Godot Project
+
+X-Builder-ABI=41.0
+
