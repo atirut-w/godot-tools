@@ -43,8 +43,7 @@ class GDScriptService(Ide.Object):
         self._ensure_connected()
         self.bind_property('client', provider, 'client', GObject.BindingFlags.SYNC_CREATE)
 
-# TODO: Fix unexpected "null" identifier when saving.
-# Error: `1:1: error: Unexpected token: Identifier:Null#`
+# FIXME: `1:1: error: Unexpected token: Identifier:Null#` when saving
 class GDScriptDiagnosticProvider(Ide.LspDiagnosticProvider, Ide.DiagnosticProvider):
     def do_load(self):
         GDScriptService.bind_client(self)
